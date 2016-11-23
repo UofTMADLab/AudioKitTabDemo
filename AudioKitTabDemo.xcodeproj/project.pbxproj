@@ -343,6 +343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PKZDGF65SL;
 				INFOPLIST_FILE = AudioKitTabDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.utoronto.madlab.AudioKitTabDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PKZDGF65SL;
 				INFOPLIST_FILE = AudioKitTabDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.utoronto.madlab.AudioKitTabDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,6 +385,7 @@
 				4A7D4D641DE5F72E0034C182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,17 +13,15 @@ class FirstViewController: UIViewController {
 
     var oscillator = AKOscillator()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        AudioKit.stop()
         AudioKit.output = oscillator
         AudioKit.start()
-        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+    
 
     @IBAction func playTone(_ sender: UIButton) {
         if oscillator.isPlaying {
