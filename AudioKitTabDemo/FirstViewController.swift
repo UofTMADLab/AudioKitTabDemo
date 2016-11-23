@@ -7,19 +7,35 @@
 //
 
 import UIKit
+import AudioKit
 
 class FirstViewController: UIViewController {
 
+    var oscillator = AKOscillator()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        AudioKit.output = oscillator
+        AudioKit.start()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func playTone(_ sender: UIButton) {
+        if oscillator.isPlaying {
+            oscillator.stop()
+            sender.setTitle("Play Tone", for: .normal)
+        } else {
+            oscillator.frequency = random(220, 800)
+            oscillator.amplitude = random(0.5, 1)
+            oscillator.start()
+            sender.setTitle("Stop playing tone at \(Int(oscillator.frequency))Hz", for: .normal)
+        }
+    }
 
 }
 
