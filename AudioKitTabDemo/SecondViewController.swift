@@ -14,6 +14,21 @@ class SecondViewController: UIViewController {
     var oscillator = AKOscillator()
     
 
+    var currentTouch: UITouch? {
+        didSet {
+            if let touch = currentTouch {
+                oscillator.frequency = frequencyAt(touch: touch)
+                oscillator.amplitude = amplitudeAt(touch: touch)
+                frequencyLabel.text = "\(Int(oscillator.frequency))Hz"
+                oscillator.start()
+            } else {
+                oscillator.stop()
+            }
+        }
+    }
+
+    @IBOutlet weak var frequencyLabel: UILabel!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         AudioKit.stop()
@@ -35,23 +50,15 @@ class SecondViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let touch = touches.first {
-            oscillator.frequency = frequencyAt(touch: touch)
-            oscillator.amplitude = amplitudeAt(touch: touch)
-            oscillator.start()
-        }
+        self.currentTouch = touches.first
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let touch = touches.first {
-            oscillator.frequency = frequencyAt(touch: touch)
-            oscillator.amplitude = amplitudeAt(touch: touch)
-        }
-        
+        self.currentTouch = touches.first
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        oscillator.stop()
+        self.currentTouch = nil
     }
 
 }
