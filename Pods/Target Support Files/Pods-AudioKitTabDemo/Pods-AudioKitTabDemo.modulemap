@@ -1,0 +1,6 @@
+framework module Pods_AudioKitTabDemo {
+  umbrella header "Pods-AudioKitTabDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
