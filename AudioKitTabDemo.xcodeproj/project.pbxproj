@@ -14,6 +14,7 @@
 		4A7D4D591DE5F72E0034C182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7D4D571DE5F72E0034C182 /* Main.storyboard */; };
 		4A7D4D5B1DE5F72E0034C182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A7D4D5A1DE5F72E0034C182 /* Assets.xcassets */; };
 		4A7D4D5E1DE5F72E0034C182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7D4D5C1DE5F72E0034C182 /* LaunchScreen.storyboard */; };
+		4A7D4D661DE6099B0034C182 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D4D651DE6099B0034C182 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4A7D4D5A1DE5F72E0034C182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A7D4D5D1DE5F72E0034C182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A7D4D5F1DE5F72E0034C182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A7D4D651DE6099B0034C182 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		50728048C66A302A6A95D590 /* Pods_AudioKitTabDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioKitTabDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		732AFB7ECBE8D87E396BC0F9 /* Pods-AudioKitTabDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioKitTabDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioKitTabDemo/Pods-AudioKitTabDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		90576E3DE8BA898D5124197F /* Pods-AudioKitTabDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioKitTabDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioKitTabDemo/Pods-AudioKitTabDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				4A7D4D511DE5F72E0034C182 /* AppDelegate.swift */,
 				4A7D4D531DE5F72E0034C182 /* FirstViewController.swift */,
 				4A7D4D551DE5F72E0034C182 /* SecondViewController.swift */,
+				4A7D4D651DE6099B0034C182 /* ThirdViewController.swift */,
 				4A7D4D571DE5F72E0034C182 /* Main.storyboard */,
 				4A7D4D5A1DE5F72E0034C182 /* Assets.xcassets */,
 				4A7D4D5C1DE5F72E0034C182 /* LaunchScreen.storyboard */,
@@ -217,6 +220,7 @@
 			files = (
 				4A7D4D561DE5F72E0034C182 /* SecondViewController.swift in Sources */,
 				4A7D4D521DE5F72E0034C182 /* AppDelegate.swift in Sources */,
+				4A7D4D661DE6099B0034C182 /* ThirdViewController.swift in Sources */,
 				4A7D4D541DE5F72E0034C182 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -88,6 +88,39 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="dhy-UA-NdO">
+            <objects>
+                <viewController id="ufI-9q-eL7" customClass="ThirdViewController" customModule="AudioKitTabDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XBo-qk-LhL"/>
+                        <viewControllerLayoutGuide type="bottom" id="YBh-1H-RbM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lUS-Df-NlP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Scl-Mu-qSK">
+                                <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Scl-Mu-qSK" firstAttribute="width" secondItem="lUS-Df-NlP" secondAttribute="width" id="Bye-bm-Sqr"/>
+                            <constraint firstItem="Scl-Mu-qSK" firstAttribute="height" secondItem="lUS-Df-NlP" secondAttribute="height" id="a6p-Qt-xb2"/>
+                            <constraint firstItem="Scl-Mu-qSK" firstAttribute="centerX" secondItem="lUS-Df-NlP" secondAttribute="centerX" id="qBv-F4-dc6"/>
+                            <constraint firstItem="Scl-Mu-qSK" firstAttribute="centerY" secondItem="lUS-Df-NlP" secondAttribute="centerY" id="zjO-iK-gdT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="gWs-al-pEr"/>
+                    <connections>
+                        <outlet property="stackView" destination="Scl-Mu-qSK" id="pCg-gH-S6x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGc-Tx-aVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="1012"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -101,6 +134,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="ufI-9q-eL7" kind="relationship" relationship="viewControllers" id="nqR-lx-PWa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
